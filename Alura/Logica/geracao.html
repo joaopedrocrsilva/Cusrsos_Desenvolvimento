@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+    document.write("<br>");
+}
+
+function pulaDuasLinhas(){
+    document.write("<br><br>");
+}
+
+function mostra(texto){
+    document.write(texto);
+    pulaLinha();
+
+}
+
+var anoAtual = 2021;
+var anoInicial = 1500;
+var valorMedia = 28;
+var media = (anoAtual - anoInicial)/valorMedia;
+
+mostra("Valor arredondado:");
+mostra(Math.round(media)); 
+
+pulaDuasLinhas();
+
+mostra("Valor inteiro:");
+mostra(media);
+
+
+</script>
